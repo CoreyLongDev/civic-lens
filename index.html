@@ -50,7 +50,7 @@
 
       <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
       <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
-
+      <!-- BREAKING NEWS -->
       <h2>Breaking News</h2>
       <article>
         <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
@@ -70,7 +70,7 @@
         </video>
       </article>
     </section>
-
+    <!-- NEWS ARTICLES -->
     <section>
       <h2>Featured Articles</h2>
         
@@ -137,35 +137,49 @@
       <h2>Stay Informed. Stay Empowered.</h2>
       <p>Receive text messages with the news you want to know.</p>
     </section>
+    <!-- CONTACT FORMS -->
     <section>
-        Name
-        
-        Mobile
-        
-        Notification Preferences
-        
-        Breaking News
-        Politics
-        Weather
-        Sports
-        Entertainment
-        World
-        Financial
-        
-        Subscribe
-      
-      <h2>Follow Us</h2>
-        Twitter/X
-        Instagram
-        YouTube
-        TikTok
-        LinkedIn
-    </section>
-      </main>
+      <form action="POST" method="https://wp.zybooks.com/form-viewer.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
 
-      <footer>
-        &copy; 2025 Civic Lens. All rights reserved.
-      </footer>
+        <label for="phone">Mobile #</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <fieldset>
+          <legend>Notification Preferences</legend>
+          
+          <label for="breaking-news">Breaking News</label>
+          <input type="checkbox" id="breaking-news" name="notification-preferences" value="breaking-news">
+          <label for="politics">Politics</label>
+          <input type="checkbox" id="politics" name="notification-preferences" value="politics">
+          <label for="weather">Weather</label>
+          <input type="checkbox" id="weather" name="notification-preferences" value="weather">
+          <label for="sports">Sports</label>
+          <input type="checkbox" id="sports" name="notification-preferences" value="sports">
+          <label for="entertainment">Entertainment</label>
+          <input type="checkbox" id="entertainment" name="notification-preferences" value="entertainment">
+          <label for="world">World</label>
+          <input type="checkbox" id="world" name="notification-preferences" value="world">
+          <label for="financial">Financial</label>
+          <input type="checkbox" id="financial" name="notification-preferences" value="financial">
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </section>         
+    <section>
+      <h2>Follow Us</h2>
+      <a href="https://twitter.com" target="_blank">Twitter | X</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://youtube.com" target="_blank">YouTube</a>
+      <a href="https://tiktok.com" target="_blank">TikTok</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </section>
+  </main>
+
+    <footer>
+      <small>&copy; 2025 Civic Lens. All rights reserved.</small>
+    </footer>
         
         
   <script>
