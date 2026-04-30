@@ -21,6 +21,7 @@
 <body>
 <!-- ADD semantic and validated HTML -->
 <!-- ADD skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <button id="theme-toggle" aria-label="Toggle light/dark mode">
       <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
@@ -28,7 +29,8 @@
       </svg>
     </button>
 
-      Civic Lens
+    <header>
+      <h1>Civic Lens</h1>
       <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
       
       <nav class="mobile-nav" aria-label="Mobile Navigation">
@@ -41,7 +43,9 @@
           <li><a href="#social">Social</a></li>
         </ul>
       </nav>
+      </header>
       
+      <main id="main-content">
       Welcome to Civic Lens
         We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
         <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
@@ -120,8 +124,11 @@
         YouTube
         TikTok
         LinkedIn
-        
+      </main>
+
+      <footer>
         &copy; 2025 Civic Lens. All rights reserved.
+      </footer>
         
         
   <script>
