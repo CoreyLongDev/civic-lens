@@ -95,36 +95,11 @@ body.dark-mode {
 }
 
 /* ///ADD/// Navigation Styles */
-nav ul {
-  display: flex;
-  gap: 1rem;
-}
-
-nav ul a {
-  text-decoration: none;
-  color: var(--watchdog-white);
-  background-color: var(--news-flash);
-  padding: 0.5rem;
-}
 
 /* ///ADD/// Global Layout Styles */
-header {
-  background-color: var(--blue-bulletin);
-  color: var(--watchdog-white);
-  padding: 2rem;
-}
 
 /* ///ADD/// Global Text Styles */
-h1 {
-  font-family: var(--font-heading);
-  font-size: 3rem;
-}
 
-header p {
-  font-family: var(--font-body);
-  font-size: 16px;
-  padding: 0.5rem 0;
-}
 /* ///ADD/// medium styles 620px */
 
 
