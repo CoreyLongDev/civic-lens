@@ -60,6 +60,7 @@ table {
   --watchdog-white: #F1FAEE;
   --truth-text: #333;
   --story-subtitle: #457B9D;
+  --silver-line: #a4a4a4;
   --font-body: "Source Sans 3", sans-serif;
   --font-heading: 'Merriweather', serif;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -143,6 +144,7 @@ body {
   padding: 1rem;
   color: var(--watchdog-white);
   border: 0.1rem solid black;
+  box-shadow: var(--shadow);
 }
 
 #breaking-news article video {
@@ -157,6 +159,35 @@ body {
   border-bottom: 0.1rem solid var(--watchdog-white);
   padding-bottom: 0.25rem;
 }
+
+ #breaking-news article p {
+    padding-top: 0.5rem;
+ }
+
+#featured-articles {
+  padding: 3rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+ #featured-articles article {
+  background-color: var(--watchdog-white);
+  padding: 1rem;
+  color: var(--truth-text);
+  border: 0.1rem solid black;
+  box-shadow: var(--shadow);
+}
+
+#featured-articles h3 {
+  font-size: 1.25rem;
+  border-bottom: 0.15rem solid var(--silver-line);
+  padding-bottom: 0.25rem;
+}
+
+ #featured-articles article p {
+    padding-top: 0.5rem;
+ }
 
 /* ///ADD/// Global Text Styles */
 h1 {
