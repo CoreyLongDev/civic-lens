@@ -166,7 +166,7 @@ body {
  }
 
 #featured-articles {
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -192,23 +192,52 @@ body {
  }
 
  #alerts {
-  /* nothing yet */
+  padding: 0 2rem;
 }
 
 #alerts form {
   background-color: var(--news-flash);
-  padding: 1rem;
-  margin: 1rem;
+  color: var(--watchdog-white);
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-top: 1rem;
 }
 
 #alerts fieldset {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 0.5rem;
+  align-items: center;
 }
 
+fieldset {
+  border: 2px solid var(--silver-line);
+  margin: 0.5rem 0;
+}
+
+fieldset legend {
+  font-weight: 500;
+  padding-left: 0.25rem;
+}
+
+#alerts input[type="text"],
+#alerts input[type="tel"] {
+  padding: 0.5rem;
+}
+#alerts input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+}
+#alerts input[type="submit"] {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 0.75rem;
+  text-transform: uppercase;
+}
 /* ///ADD/// Global Text Styles */
 h1 {
   font-family: var(--font-heading);
@@ -228,7 +257,7 @@ h2 {
 
 .tagline {
   font-family: var(--font-body);
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--watchdog-white);
   font-style: italic;
   margin-bottom: 0.75rem;
@@ -237,16 +266,15 @@ h2 {
 
 blockquote.tagline {
   font-family: var(--font-body);
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--truth-text);
-  font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
   margin: 1.5rem;
   text-align: right;
 }
 
-p {
-  /* Nothing Yet */
+#alerts p {
+  text-align: left;
 }
 
 #breaking-news p {
