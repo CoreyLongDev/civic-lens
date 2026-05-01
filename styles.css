@@ -133,6 +133,29 @@ body {
 
 #breaking-news {
   padding: 3rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+#breaking-news article {
+  background-color: var(--news-flash);
+  padding: 1rem;
+  color: var(--watchdog-white);
+  border: 0.1rem solid black;
+}
+
+#breaking-news article video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#breaking-news h3 {
+  color: var(--watchdog-white);
+  font-size: 1.25rem;
+  border-bottom: 0.1rem solid var(--watchdog-white);
+  padding-bottom: 0.25rem;
 }
 
 /* ///ADD/// Global Text Styles */
@@ -149,6 +172,7 @@ h2 {
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 0.5rem;
+  margin-left: -0.5rem;
 }
 
 .tagline {
